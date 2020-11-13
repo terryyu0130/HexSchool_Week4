@@ -1,0 +1,304 @@
+  @mixin pad {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin mobile {
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  .header {
+    background-color: #aa0601;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+  
+    @include pad {
+      padding: 30px 0;
+    }
+  
+    @include mobile {
+      display: block;
+      padding: 0;
+    }
+  
+    .logo {
+      width: 50%;
+  
+      @include pad {
+        width: 30%;
+      }
+  
+      @include mobile {
+        width: 100%;
+        padding: 10px 0;
+      }
+  
+      a {
+        width: 80px;
+        height: 48px;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        white-space: nowrap;
+        text-indent: 101%;
+        overflow: hidden;
+  
+        @include mobile {
+          width: 48px;
+          height: 30px;
+          margin: 0 auto;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  
+    .header-menu {
+      display: flex;
+      justify-content: space-around;
+  
+      @include mobile {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+  
+      li {
+        @include mobile {
+          width: 50%;
+        }
+  
+        a {
+          font-size: 20px;
+          font-weight: bold;
+          color: #fff;
+  
+          @include mobile {
+            display: block;
+            text-align: center;
+            padding: 5px 0;
+            border: 1px solid #fff;
+            margin: 0 0 -1px -1px;
+          }
+        }
+      }
+  
+      li + li {
+        margin-left: 64px;
+  
+        @include pad {
+          margin-left: 40px;
+        }
+  
+        @include mobile {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  
+  .footer {
+    background-color: #aa0601;
+  }
+  
+  .wrap {
+    width: 1120px;
+    margin: 0 auto;
+    padding-top: 36px;
+    @include pad {
+      width: 90%;
+    }
+    @include mobile {
+      width: 95%;
+      position: relative;
+    }
+  }
+  
+  .footer-menu-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mobile {
+      justify-content: flex-end;
+    }
+  }
+  
+  .footer-menu,
+  .footer-icon,
+  .footer-privacy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-icon,
+  .footer-privacy {
+    width: 20%;
+  }
+  .footer-icon {
+    @include mobile {
+      width: 35%;
+      margin-top: -10px;
+    }
+    li {
+      @include pad {
+        width: 24px;
+      }
+    }
+  }
+  .footer-privacy {
+    @include pad {
+      width: 25%;
+    }
+  }
+  .footer-privacy {
+    @include mobile {
+      display: block;
+    }
+    li {
+      @include mobile {
+        padding-top: 10px;
+      }
+      a {
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+  .footer-menu {
+    @include mobile {
+      display: none;
+    }
+    li + li {
+      margin-left: 48px;
+    }
+    li {
+      a {
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+  .footer-copyright {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include pad {
+      width: 50%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    .logo {
+      margin-right: 38px;
+      @include pad {
+        display: none;
+      }
+      @include mobile {
+        display: block;
+        position: absolute;
+        right: -30px;
+        bottom: 20px;
+      }
+      a {
+        @include mobile {
+          width: 46px;
+          height: 28px;
+          background-size: 100%;
+        }
+      }
+    }
+    .copyright {
+      color: #fff;
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+  
+  .footer-info {
+    padding: 30px 0;
+    border-bottom: 1px solid #fff;
+    @include mobile {
+      width: 100%;
+      padding: 25px 0;
+      position: absolute;
+      top: 0;
+    }
+    li:first-child {
+      padding-bottom: 15px;
+      @include mobile {
+        padding-bottom: 5px;
+      }
+    }
+    li {
+      @include pad {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    img {
+      @include pad {
+        width: 10%;
+      }
+      @include mobile {
+        width: 20px;
+      }
+    }
+    span {
+      font-size: 36px;
+      color: #fff;
+      margin-left: 10px;
+      @include pad {
+        width: 90%;
+        font-size: 24px;
+      }
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+  .footer-bottom {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      display: block;
+      padding: 70px 0 20px;
+      position: relative;
+    }
+    .logo {
+      a {
+        width: 80px;
+        height: 48px;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        white-space: nowrap;
+        text-indent: 101%;
+        overflow: hidden;
+      }
+    }
+  }
+  

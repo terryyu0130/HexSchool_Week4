@@ -1,0 +1,256 @@
+    /* content css */
+    /* page 6 */
+    .location-first .banner {
+        height: 304px;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/qa.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .location-first .banner-content {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .location-first .banner-content .title {
+        font-size: 64px;
+        margin-right: 24px;
+    }
+
+    /* banner IPAD */
+    @media (max-width: 768px) {
+        .location-first .banner {
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/blog-4.png");
+            background-position: 30% 30%;
+            background-size: 150%;
+        }
+
+        .location-first .banner-content {
+            width: 90%;
+        }
+
+        .location-first .banner-content .title {
+            font-size: 48px;
+            margin-right: 16px;
+        }
+
+        .location-first .banner-content img {
+            transform: scale(0.8);
+        }
+    }
+
+    /* banner IPHONE */
+    @media (max-width: 375px) {
+        .location-first .banner {
+            height: 143px;
+        }
+
+        .location-first .banner-content {
+            width: 95%;
+        }
+
+        .location-first .banner-content .title {
+            font-size: 28px;
+            margin-right: 8px;
+        }
+
+        .location-first .banner-content img {
+            transform: scale(0.5);
+        }
+    }
+
+    .location-first .content {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .location-first .content .list {
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .location-first .content .select {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .location-first .content .region {
+        width: 30%;
+        padding: 10px 0 10px 20px;
+        margin-left: 20px;
+        border: 1px solid #ccc;
+        font-size: 18px;
+        color: #495057;
+    }
+
+    /* content IPAD */
+    @media (max-width: 768px) {
+        .location-first .content {
+            width: 90%;
+        }
+
+        .location-first .content .list {
+            padding: 8px 0 24px;
+        }
+
+        .location-first .content .select {
+            font-size: 16px;
+        }
+
+        .location-first .content .region {
+            width: 35%;
+            padding: 12px 0 12px 16px;
+            font-size: 16px;
+        }
+    }
+
+    /* content IPHOME */
+    @media (max-width: 375px) {
+        .location-first .content {
+            width: 95%;
+        }
+
+        .location-first .content .list {
+            padding: 8px 0 20px;
+        }
+
+        .location-first .content .select {
+            width: 20%;
+            font-size: 14px;
+        }
+
+        .location-first .content .region {
+            width: 80%;
+            margin-left: 12px;
+            padding: 8px 0 8px 16px;
+        }
+    }
+
+    .location-first .info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 300px;
+    }
+
+    .location-first .info>li {
+        width: 31%;
+    }
+
+    .location-first .info>li>img {
+        width: 100%;
+        height: 224px;
+    }
+
+    .location-first .info>li:nth-child(n + 4) {
+        margin-top: 32px;
+    }
+
+    .location-first .info .title {
+        font-size: 24px;
+        padding: 12px 24px;
+        border: 1px solid #ccc;
+    }
+
+    .location-first .sub-info {
+        padding: 16px 24px;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+
+    .location-first .sub-info li {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .location-first .sub-info li+li {
+        margin-top: 8px;
+    }
+
+    .location-first .sub-info img {
+        width: 21px;
+        height: 22px;
+        margin-top: 4px;
+        margin-right: 12px;
+    }
+
+    .location-first .sub-info .text {
+        font-size: 20px;
+    }
+
+    .location-first .info .detail {
+        color: #fff;
+        background-color: #000;
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    /* info IPAD */
+    @media (max-width: 768px) {
+        .location-first .info {
+            padding-bottom: 100px;
+        }
+
+        .location-first .info>li {
+            width: 48%;
+        }
+
+        .location-first .info>li>img {
+            height: 164px;
+        }
+
+        .location-first .info>li:nth-child(n + 3) {
+            margin-top: 20px;
+        }
+
+        .location-first .info .title {
+            font-size: 16px;
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+        }
+
+        .location-first .sub-info {
+            padding: 16px;
+        }
+
+        .location-first .sub-info .text {
+            font-size: 14px;
+        }
+
+        .location-first .sub-info img {
+            width: 20px;
+            height: 20px;
+            margin-top: 0px;
+            margin-right: 16px;
+        }
+
+        .location-first .info .detail {
+            font-size: 14px;
+            padding: 16px 0;
+        }
+    }
+
+    /* info IPHOME */
+    @media (max-width: 375px) {
+        .location-first .info {
+            justify-content: center;
+            padding-bottom: 56px;
+        }
+
+        .location-first .info>li {
+            width: 95%;
+        }
+
+        .location-first .info>li:nth-child(n + 2) {
+            margin-top: 16px;
+        }
+    }

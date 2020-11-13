@@ -1,0 +1,165 @@
+ /* content css */
+    /* page 8 */
+    .QA .banner {
+        height: 304px;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/qa.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .QA .banner-content {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .QA .banner-content .title {
+        font-size: 64px;
+        margin-right: 24px;
+    }
+
+    .QA .banner-content img {
+        transform: scale(1.2);
+    }
+
+    /* banner IPAD */
+    @media (max-width: 768px) {
+        .QA .banner {
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/blog-4.png");
+            background-position: 30% 30%;
+            background-size: 150%;
+        }
+
+        .QA .banner-content {
+            width: 90%;
+        }
+
+        .QA .banner-content .title {
+            font-size: 48px;
+            margin-right: 16px;
+        }
+
+        .QA .banner-content img {
+            transform: scale(0.8);
+        }
+    }
+
+    /* banner IPHONE */
+    @media (max-width: 375px) {
+        .QA .banner {
+            height: 143px;
+        }
+
+        .QA .banner-content {
+            width: 95%;
+        }
+
+        .QA .banner-content .title {
+            font-size: 28px;
+            margin-right: 8px;
+        }
+
+        .QA .banner-content img {
+            transform: scale(0.5);
+        }
+    }
+
+    .QA .content {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .QA .content .title {
+        font-size: 32px;
+        padding: 80px 0 36px;
+    }
+
+    .QA .Q-list {
+        padding-bottom: 300px;
+    }
+
+    .QA .question {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .QA .question+.question {
+        margin-top: 40px;
+    }
+
+    .QA .A-list {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+
+    .QA .answer {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* content IPAD */
+    @media (max-width: 768px) {
+        .QA .content {
+            width: 90%;
+        }
+
+        .QA .content .title {
+            padding: 40px 0 36px;
+        }
+
+        .QA .Q-list {
+            padding-bottom: 100px;
+        }
+
+        .QA .A-list {
+            width: 85%;
+        }
+    }
+
+    /* content IPHONE */
+    @media (max-width: 375px) {
+        .QA .content {
+            width: 95%;
+        }
+
+        .QA .content .title {
+            font-size: 20px;
+            padding: 24px 0 12px;
+        }
+
+        .QA .Q-list {
+            padding-bottom: 50px;
+        }
+
+        .QA .question {
+            font-size: 16px;
+        }
+
+        .QA .question+.question {
+            margin-top: 20px;
+        }
+
+        .QA .A-list {
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .QA .answer {
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .QA .A-list .answer:not(:last-child) {
+            display: inline;
+        }
+
+        .QA .A-list .answer:last-child {
+            margin-top: 20px;
+        }
+    }

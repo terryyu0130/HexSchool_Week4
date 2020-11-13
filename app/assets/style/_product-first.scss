@@ -1,0 +1,364 @@
+  /* content css */
+    /* page 4 */
+
+    .product-first .breadcrumb .list {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-first .list li {
+        width: 33.3333%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .product-first .list li:first-child::after {
+        content: "";
+        width: 100%;
+        height: 16px;
+        background-color: #aa0601;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .product-first .list li a {
+        display: block;
+        font-size: 42px;
+        color: #000;
+        padding: 30px 0;
+    }
+
+    .product-first .list .pic {
+        margin-right: 16px;
+    }
+
+    .product-first .list .pic img {
+        filter: brightness(0);
+        transform: scale(1.5);
+    }
+
+    /* breadcrumb IPAD */
+    @media (max-width: 768px) {
+        .product-first .breadcrumb .list {
+            width: 100%;
+        }
+
+        .product-first .list li a {
+            font-size: 28px;
+            padding: 20px 0;
+        }
+
+        .product-first .list .pic img {
+            transform: scale(1);
+        }
+
+        .product-first .list .pic {
+            margin-right: 8px;
+        }
+
+        .product-first .list li:first-child::after {
+            height: 8px;
+        }
+    }
+
+    /* breadcrumb IPONE */
+    @media (max-width: 375px) {
+        .product-first .list li a {
+            font-size: 14px;
+            padding: 16px 0;
+        }
+
+        .product-first .list li:first-child::after {
+            height: 4px;
+        }
+
+        .product-first .list .pic {
+            margin-right: 0px;
+        }
+
+        .product-first .list .pic img {
+            transform: scale(0.6);
+        }
+    }
+
+    .product-first .banner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-first .banner li {
+        width: 49%;
+        height: 309px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    .product-first .banner li:first-child {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week4/banner-1.png");
+    }
+
+    .product-first .banner li:last-child {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week4/banner-2.png");
+    }
+
+    /* banner IPAD */
+    @media (max-width: 768px) {
+        .product-first .banner li {
+            width: 50%;
+            background-size: cover;
+        }
+    }
+
+    /* banner IPONE */
+    @media (max-width: 375px) {
+        .product-first .banner li {
+            height: 144px;
+            background-size: 150% 100%;
+        }
+    }
+
+    .product-first .product {
+        padding: 80px 0;
+    }
+
+    .product-first .product .title {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .product-first .product .subtitle {
+        font-size: 32px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .product-first .product-list {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product-first .product-list li {
+        width: 23%;
+    }
+
+    .product-first .product-list li .pic {
+        height: 164px;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .product-first .product-list li:nth-child(1) .pic,
+    .product-first .product-list li:nth-child(7) .pic {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week4/products-1.png");
+    }
+
+    .product-first .product-list li:nth-child(2) .pic,
+    .product-first .product-list li:nth-child(8) .pic {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week4/products-7.jpg");
+        background-size: 120%;
+    }
+
+    .product-first .product-list li:nth-child(3) .pic,
+    .product-first .product-list li:nth-child(9) .pic {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week4/products-8.jpg");
+        background-size: 140%;
+        background-position: 10% 30%;
+    }
+
+    .product-first .product-list li:nth-child(4) .pic,
+    .product-first .product-list li:nth-child(10) .pic {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-10.jpg");
+        background-size: 120%;
+        background-position: 10% 0;
+    }
+
+    .product-first .product-list li:nth-child(5) .pic,
+    .product-first .product-list li:nth-child(11) .pic {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week4/products-9.jpg");
+        background-size: 150%;
+        background-position: 20% 20%;
+    }
+
+    .product-first .product-list li:nth-child(6) .pic,
+    .product-first .product-list li:nth-child(12) .pic {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-12.jpg");
+        background-size: 150%;
+    }
+
+    .product-first .product-list li:nth-child(n + 5) {
+        margin-top: 100px;
+    }
+
+    .product-first .product-list .text {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        padding: 5px 0;
+    }
+
+    .product-first .text p {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .product-first .price {
+        color: #aa0601;
+    }
+
+    .product-first .box {
+        width: 24px;
+        height: 24px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    .product-first .brown-box {
+        background-color: #5f3e2d;
+    }
+
+    .product-first .red-box {
+        background-color: #b75929;
+    }
+
+    /* product IPAD */
+    @media (max-width: 768px) {
+        .product-first .product {
+            padding: 40px 0 100px;
+        }
+
+        .product-first .product .title {
+            font-size: 32px;
+        }
+
+        .product-first .product .subtitle {
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+
+        .product-first .product-list {
+            width: 90%;
+        }
+
+        .product-first .product-list li {
+            width: 48%;
+        }
+
+        .product-first .product-list img {
+            width: 100%;
+        }
+
+        .product-first .product-list li:nth-child(n + 3) {
+            margin-top: 70px;
+        }
+
+        .product-first .product-list li:nth-child(11),
+        .product-first .product-list li:nth-child(12) {
+            display: none;
+        }
+
+        .product-first .product-list li:not(:first-child) .pic {
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week4/products-1.png");
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+
+    /* product IPONE */
+    @media (max-width: 375px) {
+        .product-first .product {
+            padding: 30px 0 60px;
+        }
+
+        .product-first .product .title {
+            font-size: 20px;
+        }
+
+        .product-first .product .subtitle {
+            font-size: 16px;
+        }
+
+        .product-first .product-list li {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .product-first .product-list li:nth-child(n + 2) {
+            margin-top: 30px;
+        }
+
+        .product-first .product-list li:nth-child(n + 4) {
+            display: none;
+        }
+    }
+
+    .product-first .pagination {
+        width: 25%;
+        margin: 0 auto 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-first .pagination li {
+        width: 10%;
+        text-align: center;
+        border: 1px solid #000;
+        margin: 0 0 -1px -1px;
+    }
+
+    .pagination li:nth-child(3) {
+        background-color: #000;
+    }
+
+    .pagination li:nth-child(3) a {
+        color: #fff;
+    }
+
+    .product-first .pagination .change {
+        width: 20%;
+    }
+
+    .product-first .pagination .change:last-child {
+        background-color: #f2f2f2;
+    }
+
+    .product-first .pagination li a {
+        font-size: 20px;
+        display: block;
+        padding: 15px 0;
+        color: #555555;
+    }
+
+    /* pagination IPAD */
+    @media (max-width: 768px) {
+        .product-first .pagination {
+            width: 60%;
+            margin: 0 auto 100px;
+        }
+
+        .product-first .pagination li a {
+            padding: 10px 0;
+        }
+    }
+
+    /* pagination IPHONE */
+    @media (max-width: 375px) {
+        .product-first .pagination {
+            width: 80%;
+            margin: 0 auto 60px;
+        }
+
+        .product-first .pagination li a {
+            font-size: 12px;
+        }
+    }

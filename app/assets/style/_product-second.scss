@@ -1,0 +1,386 @@
+/* content css */
+    /* page 5 */
+    .product-second .breadcrumb .list {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-second .list li {
+        width: 33.3333%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .product-second .list li:nth-child(2)::after {
+        content: "";
+        width: 100%;
+        height: 16px;
+        background-color: #aa0601;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .product-second .list li a {
+        display: block;
+        font-size: 42px;
+        color: #000;
+        padding: 30px 0;
+    }
+
+    .product-second .list .pic {
+        margin-right: 16px;
+    }
+
+    .product-second .list .pic img {
+        filter: brightness(0);
+        transform: scale(1.5);
+    }
+
+    /* breadcrumb IPAD */
+    @media (max-width: 768px) {
+        .product-second .breadcrumb .list {
+            width: 100%;
+        }
+
+        .product-second .list li a {
+            font-size: 28px;
+            padding: 20px 0;
+        }
+
+        .product-second .list .pic img {
+            transform: scale(1);
+        }
+
+        .product-second .list .pic {
+            margin-right: 8px;
+        }
+
+        .product-second .list li:nth-child(2)::after {
+            height: 8px;
+        }
+    }
+
+    /* breadcrumb IPONE */
+    @media (max-width: 375px) {
+        .product-second .list li a {
+            font-size: 14px;
+            padding: 16px 0;
+        }
+
+        .product-second .list li:nth-child(2)::after {
+            height: 4px;
+        }
+
+        .product-second .list .pic {
+            margin-right: 0px;
+        }
+
+        .product-second .list .pic img {
+            transform: scale(0.6);
+        }
+    }
+
+    .product-second .banner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-second .banner li {
+        width: 49%;
+        height: 309px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    .product-second .banner li:first-child {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-3.png");
+    }
+
+    .product-second .banner li:last-child {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-2-color.png");
+    }
+
+    /* banner IPAD */
+    @media (max-width: 768px) {
+        .product-second .banner li {
+            width: 50%;
+            background-size: cover;
+        }
+    }
+
+    /* banner IPONE */
+    @media (max-width: 375px) {
+        .product-second .banner li {
+            height: 144px;
+            background-size: 150% 100%;
+        }
+    }
+
+    .product-second .product {
+        padding: 80px 0;
+    }
+
+    .product-second .product .title {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .product-second .product .subtitle {
+        font-size: 32px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .product-second .product-list {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 300px;
+    }
+
+    .product-second .product-list li {
+        width: 31%;
+    }
+
+    .product-second .product-list li .pic {
+        height: 224px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .product-second .product-list li:nth-child(1) .pic {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-4.png");
+    }
+
+    .product-second .product-list li:nth-child(2) .pic {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-3.png");
+    }
+
+    .product-second .product-list li:nth-child(3) .pic {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-2.png");
+    }
+
+    .product-second .product-list li:nth-child(4) .pic {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-6.jpg");
+        background-size: 120% 120%;
+        background-position: right;
+    }
+
+    .product-second .product-list li:nth-child(5) .pic {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-11.jpg");
+    }
+
+    .product-second .product-list li:nth-child(6) .pic {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-5.jpg");
+    }
+
+    .product-second .product-list li:nth-child(n + 4) {
+        margin-top: 100px;
+    }
+
+    .product-second .product-list li:nth-child(n + 7) {
+        display: none;
+    }
+
+    .product-second .product-list img {
+        width: 100%;
+    }
+
+    .product-second .product-list .text {
+        text-transform: uppercase;
+    }
+
+    .product-second .text p {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .product-second .price {
+        color: #aa0601;
+        padding-top: 8px;
+    }
+
+    .product-second .box {
+        width: 24px;
+        height: 24px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .product-second .brown-box {
+        background-color: #5f3e2d;
+    }
+
+    .product-second .red-box {
+        background-color: #b75929;
+    }
+
+    /* product IPAD */
+    @media (max-width: 768px) {
+        .product-second .product {
+            padding: 40px 0 100px;
+        }
+
+        .product-second .product .title {
+            font-size: 32px;
+        }
+
+        .product-second .product .subtitle {
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+
+        .product-second .product-list {
+            width: 90%;
+            margin-bottom: 0px;
+        }
+
+        .product-second .product-list li {
+            width: 48%;
+        }
+
+        .product-second .product-list li .pic {
+            height: 164px;
+        }
+
+        .product-second .product-list li:nth-child(odd) .pic {
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-4.png");
+        }
+
+        .product-second .product-list li:nth-child(even) .pic {
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-3.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .product-second .product-list li:nth-child(n + 3) {
+            margin-top: 70px;
+        }
+
+        .product-second .product-list li:nth-child(n + 7) {
+            display: block;
+        }
+
+        .product-second .product-list .text {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-second .price {
+            padding-top: 0px;
+        }
+
+        .product-second .box {
+            margin-top: 0px;
+        }
+    }
+
+    /* product IPONE */
+    @media (max-width: 375px) {
+        .product-second .product {
+            padding: 30px 0 60px;
+        }
+
+        .product-second .product .title {
+            font-size: 20px;
+        }
+
+        .product-second .product .subtitle {
+            font-size: 16px;
+        }
+
+        .product-second .product-list li {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .product-second .product-list li .pic {
+            height: 166px;
+        }
+
+        .product-second .product-list li:nth-child(3) .pic {
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-2.png");
+        }
+
+        .product-second .product-list li:nth-child(n + 2) {
+            margin-top: 30px;
+        }
+
+        .product-second .product-list li:nth-child(n + 4) {
+            display: none;
+        }
+    }
+
+    .product-second .pagination {
+        width: 25%;
+        margin: 0 auto 150px;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    .product-second .pagination li {
+        width: 10%;
+        text-align: center;
+        border: 1px solid #000;
+        margin: 0 0 -1px -1px;
+    }
+
+    .product-second .pagination li:nth-child(3) {
+        background-color: #000;
+    }
+
+    .product-second .pagination li:nth-child(3) a {
+        color: #fff;
+    }
+
+    .product-second .pagination .change {
+        width: 20%;
+    }
+
+    .product-second .pagination .change:last-child {
+        background-color: #f2f2f2;
+    }
+
+    .product-second .pagination li a {
+        font-size: 20px;
+        display: block;
+        padding: 15px 0;
+        color: #555555;
+    }
+
+    /* pagination IPAD */
+    @media (max-width: 768px) {
+        .product-second .pagination {
+            width: 60%;
+            margin: 0 auto 100px;
+            display: flex;
+        }
+
+        .product-second .pagination li a {
+            padding: 10px 0;
+        }
+    }
+
+    /* pagination IPHONE */
+    @media (max-width: 375px) {
+        .product-second .pagination {
+            width: 80%;
+            margin: 0 auto 60px;
+        }
+
+        .product-second .pagination li a {
+            font-size: 12px;
+        }
+    }
